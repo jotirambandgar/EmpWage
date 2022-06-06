@@ -6,7 +6,8 @@ public class EmpWage {
     EmpWageBuilder empWageBuilder = new EmpWageBuilder();
     boolean isEmpPresent = empWageBuilder.isEmpPresent();
     if(isEmpPresent){
-      System.out.println("Employee is present");
+      System.out.println("Employee wage of the day: " +
+        empWageBuilder.calculateWage());
     }else {
       System.out.println("Employee is absent");
     }
